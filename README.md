@@ -7,6 +7,7 @@
 ## 1. 获取代码
 执行`git clone https://github.com/liujjdata/TTS-TPU-vits.git`。
 - TTS部署的主体代码在sherpa-onnx/csrc文件下
+- 运行cvimodel需要对应版本的cviruntime！（这里的cviruntime我做了一些改动，待开源）
 ## 2. 环境准备
 - 获取docker镜像，创建容器并进入：`docker run --privileged --name mytpudev -v $PWD:/workspace -it sophgo/tpuc_dev:latest`。执行完这一命令后，会进入docker，后续步骤都在`mytpudev`容器中执行。
 
@@ -41,7 +42,7 @@ bash build-riscv64-linux-gnu.sh # 在X86上交叉编译
 编译完成后，会在`build-riscv64-linux-gnu/bin`目录得到多个可执行文件，`sherpa-onnx-offline-tts`是tts的可执行文件。
 
 ## 4. 运行
-- TTS的cvimodel模型即将开源，尽情期待！
+- TTS的cvimodel模型和cviruntime即将开源，尽情期待！
 - TTS文字转语音：命令行执行下列命令
   ```sh
   ./build-riscv64-linux-gnu/bin/sherpa-onnx-offline-tts \
