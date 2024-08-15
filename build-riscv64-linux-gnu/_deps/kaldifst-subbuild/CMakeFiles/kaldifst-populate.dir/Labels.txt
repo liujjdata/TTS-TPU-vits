@@ -1,0 +1,14 @@
+# Target labels
+ kaldifst-populate
+# Source files and their labels
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/CMakeFiles/kaldifst-populate
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/CMakeFiles/kaldifst-populate.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/CMakeFiles/kaldifst-populate-complete.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/kaldifst-populate-prefix/src/kaldifst-populate-stamp/kaldifst-populate-build.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/kaldifst-populate-prefix/src/kaldifst-populate-stamp/kaldifst-populate-configure.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/kaldifst-populate-prefix/src/kaldifst-populate-stamp/kaldifst-populate-download.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/kaldifst-populate-prefix/src/kaldifst-populate-stamp/kaldifst-populate-install.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/kaldifst-populate-prefix/src/kaldifst-populate-stamp/kaldifst-populate-mkdir.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/kaldifst-populate-prefix/src/kaldifst-populate-stamp/kaldifst-populate-patch.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/kaldifst-populate-prefix/src/kaldifst-populate-stamp/kaldifst-populate-test.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/kaldifst-populate-prefix/src/kaldifst-populate-stamp/kaldifst-populate-update.rule

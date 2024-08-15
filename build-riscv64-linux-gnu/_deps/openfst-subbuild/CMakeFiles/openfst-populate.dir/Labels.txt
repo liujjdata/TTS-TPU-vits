@@ -1,0 +1,14 @@
+# Target labels
+ openfst-populate
+# Source files and their labels
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/CMakeFiles/openfst-populate
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/CMakeFiles/openfst-populate.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/CMakeFiles/openfst-populate-complete.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/openfst-populate-prefix/src/openfst-populate-stamp/openfst-populate-build.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/openfst-populate-prefix/src/openfst-populate-stamp/openfst-populate-configure.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/openfst-populate-prefix/src/openfst-populate-stamp/openfst-populate-download.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/openfst-populate-prefix/src/openfst-populate-stamp/openfst-populate-install.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/openfst-populate-prefix/src/openfst-populate-stamp/openfst-populate-mkdir.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/openfst-populate-prefix/src/openfst-populate-stamp/openfst-populate-patch.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/openfst-populate-prefix/src/openfst-populate-stamp/openfst-populate-test.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/openfst-populate-prefix/src/openfst-populate-stamp/openfst-populate-update.rule

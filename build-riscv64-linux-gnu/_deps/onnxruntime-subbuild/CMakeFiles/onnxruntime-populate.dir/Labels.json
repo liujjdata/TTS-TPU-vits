@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/onnxruntime-subbuild/CMakeFiles/onnxruntime-populate"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/onnxruntime-subbuild/CMakeFiles/onnxruntime-populate.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/onnxruntime-subbuild/CMakeFiles/onnxruntime-populate-complete.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/onnxruntime-subbuild/onnxruntime-populate-prefix/src/onnxruntime-populate-stamp/onnxruntime-populate-build.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/onnxruntime-subbuild/onnxruntime-populate-prefix/src/onnxruntime-populate-stamp/onnxruntime-populate-configure.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/onnxruntime-subbuild/onnxruntime-populate-prefix/src/onnxruntime-populate-stamp/onnxruntime-populate-download.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/onnxruntime-subbuild/onnxruntime-populate-prefix/src/onnxruntime-populate-stamp/onnxruntime-populate-install.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/onnxruntime-subbuild/onnxruntime-populate-prefix/src/onnxruntime-populate-stamp/onnxruntime-populate-mkdir.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/onnxruntime-subbuild/onnxruntime-populate-prefix/src/onnxruntime-populate-stamp/onnxruntime-populate-patch.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/onnxruntime-subbuild/onnxruntime-populate-prefix/src/onnxruntime-populate-stamp/onnxruntime-populate-test.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/onnxruntime-subbuild/onnxruntime-populate-prefix/src/onnxruntime-populate-stamp/onnxruntime-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"onnxruntime-populate"
+		],
+		"name" : "onnxruntime-populate"
+	}
+}

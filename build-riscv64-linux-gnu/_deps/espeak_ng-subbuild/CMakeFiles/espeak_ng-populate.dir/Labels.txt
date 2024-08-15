@@ -1,0 +1,14 @@
+# Target labels
+ espeak_ng-populate
+# Source files and their labels
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/CMakeFiles/espeak_ng-populate
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/CMakeFiles/espeak_ng-populate.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/CMakeFiles/espeak_ng-populate-complete.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/espeak_ng-populate-prefix/src/espeak_ng-populate-stamp/espeak_ng-populate-build.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/espeak_ng-populate-prefix/src/espeak_ng-populate-stamp/espeak_ng-populate-configure.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/espeak_ng-populate-prefix/src/espeak_ng-populate-stamp/espeak_ng-populate-download.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/espeak_ng-populate-prefix/src/espeak_ng-populate-stamp/espeak_ng-populate-install.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/espeak_ng-populate-prefix/src/espeak_ng-populate-stamp/espeak_ng-populate-mkdir.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/espeak_ng-populate-prefix/src/espeak_ng-populate-stamp/espeak_ng-populate-patch.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/espeak_ng-populate-prefix/src/espeak_ng-populate-stamp/espeak_ng-populate-test.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/espeak_ng-populate-prefix/src/espeak_ng-populate-stamp/espeak_ng-populate-update.rule

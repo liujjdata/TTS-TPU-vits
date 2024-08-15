@@ -1,0 +1,14 @@
+# Target labels
+ simple-sentencepiece-populate
+# Source files and their labels
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/CMakeFiles/simple-sentencepiece-populate
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/CMakeFiles/simple-sentencepiece-populate.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/CMakeFiles/simple-sentencepiece-populate-complete.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/simple-sentencepiece-populate-prefix/src/simple-sentencepiece-populate-stamp/simple-sentencepiece-populate-build.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/simple-sentencepiece-populate-prefix/src/simple-sentencepiece-populate-stamp/simple-sentencepiece-populate-configure.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/simple-sentencepiece-populate-prefix/src/simple-sentencepiece-populate-stamp/simple-sentencepiece-populate-download.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/simple-sentencepiece-populate-prefix/src/simple-sentencepiece-populate-stamp/simple-sentencepiece-populate-install.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/simple-sentencepiece-populate-prefix/src/simple-sentencepiece-populate-stamp/simple-sentencepiece-populate-mkdir.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/simple-sentencepiece-populate-prefix/src/simple-sentencepiece-populate-stamp/simple-sentencepiece-populate-patch.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/simple-sentencepiece-populate-prefix/src/simple-sentencepiece-populate-stamp/simple-sentencepiece-populate-test.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/simple-sentencepiece-populate-prefix/src/simple-sentencepiece-populate-stamp/simple-sentencepiece-populate-update.rule

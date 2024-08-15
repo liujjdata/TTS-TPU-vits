@@ -1,0 +1,151 @@
+name: build-wheels-linux
+
+on:
+  push:
+    branches:
+      - wheel
+
+    tags:
+      - '*'
+  workflow_dispatch:
+
+concurrency:
+  group: build-wheels-linux-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build_wheels_linux:
+    name: ${{ matrix.python-version }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        python-version: ["cp37", "cp38", "cp39", "cp310", "cp311", "cp312"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # see https://cibuildwheel.readthedocs.io/en/stable/changelog/
+      # for a list of versions
+      - name: Build wheels
+        uses: pypa/cibuildwheel@v2.15.0
+        env:
+          CIBW_BEFORE_BUILD: |
+            echo "Install espeak-ng"
+            git clone https://github.com/csukuangfj/espeak-ng
+            cd espeak-ng
+            git fetch
+            git checkout sherpa-onnx
+            mkdir my-build
+            cd my-build
+
+            cmake \
+              -DBUILD_ESPEAK_NG_TESTS=OFF \
+              -DBUILD_SHARED_LIBS=ON \
+              -DCMAKE_INSTALL_PREFIX=./install \
+              -DUSE_MBROLA=OFF \
+              -DUSE_LIBSONIC=OFF \
+              -DUSE_LIBPCAUDIO=OFF \
+              -DUSE_KLATT=OFF \
+              -DUSE_SPEECHPLAYER=OFF \
+              -DESPEAK_COMPAT=OFF \
+              -DEXTRA_cmn=ON \
+              -DEXTRA_ru=ON \
+              ..
+            make -j
+            make install
+
+            cd ../..
+
+            echo "build piper-phonemize"
+
+            pwd
+            ls -lh
+
+            mkdir my-build
+
+            ls -lh
+
+            cd my-build
+            pwd
+            ls -lh
+
+            echo "espeak install dir"
+            ls -lh /project/espeak-ng/my-build/install
+
+            cmake \
+              -DESPEAK_NG_DIR=/project/espeak-ng/my-build/install \
+              -DCMAKE_INSTALL_PREFIX=./install \
+              -DBUILD_PIPER_PHONMIZE_TESTS=OFF \
+              -DBUILD_PIPER_PHONMIZE_EXE=OFF \
+              ..
+
+            make -j
+            make install
+
+            cp -a /project/espeak-ng/my-build/install/share/espeak-ng-data ../piper_phonemize/
+            cp -a ./install/share/*.ort ../
+            pwd
+            ls -lh
+            ls -lh ./install
+            ls -lh ./install/share
+            ls -lh ./install/lib
+            ls -lh ..
+
+            if [ -d ./install/lib64 ]; then
+              mkdir -p ./install/lib
+              cp -av ./install/lib64/* ./install/lib/
+            fi
+
+            ls -lh ./install/lib
+
+            cd ..
+            ls -lh
+
+          CIBW_BUILD: "${{ matrix.python-version}}-* "
+          CIBW_SKIP: "cp27-* cp35-* cp36-* *-win32 pp* *-musllinux* *-manylinux_i686"
+          CIBW_BUILD_VERBOSITY: 3
+          CIBW_ENVIRONMENT_LINUX: LD_LIBRARY_PATH='/project/my-build/install/lib'
+
+      - name: Display wheels
+        shell: bash
+        run: |
+          ls -lh ./wheelhouse/
+
+      - name: Release to csukuangfj/piper-phonemize
+        uses: svenstaro/upload-release-action@v2
+        with:
+          file_glob: true
+          file: wheelhouse/*.whl
+          overwrite: true
+          tag: 2023.12.5
+
+      - name: Publish to huggingface
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        uses: nick-fields/retry@v2
+        with:
+          max_attempts: 20
+          timeout_seconds: 200
+          shell: bash
+          command: |
+            git config --global user.email "csukuangfj@gmail.com"
+            git config --global user.name "Fangjun Kuang"
+
+            rm -rf huggingface
+            export GIT_LFS_SKIP_SMUDGE=1
+
+            git clone https://huggingface.co/csukuangfj/piper-phonemize-wheels huggingface
+            cd huggingface
+            git lfs track "*.whl"
+            git fetch
+            git pull
+            git merge -m "merge remote" --ff origin main
+
+            cp -v ../wheelhouse/*.whl .
+
+            git status
+            git add .
+            git commit -m "add more wheels"
+            git push https://csukuangfj:$HF_TOKEN@huggingface.co/csukuangfj/piper-phonemize-wheels main

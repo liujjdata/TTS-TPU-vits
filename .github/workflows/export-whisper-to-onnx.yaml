@@ -1,0 +1,170 @@
+name: export-whisper-to-onnx
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: release-whisper-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  release-whisper-models:
+    if: github.repository_owner == 'k2-fsa' || github.repository_owner == 'csukuangfj'
+    name: ${{ matrix.model }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        # model: ["distil-medium.en", "distil-small.en",  "tiny.en", "base.en", "small.en", "medium.en", "tiny", "base", "small", "medium", "large", "large-v1", "large-v2", "distil-large-v2"]
+        model: ["distil-medium.en", "distil-small.en",  "tiny.en", "base.en", "small.en", "medium.en", "tiny", "base", "small", "medium", "medium-aishell"]
+        python-version: ["3.8"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        shell: bash
+        run: |
+          python3 -m pip install torch==1.13.0 torchaudio==0.13.0 -f https://download.pytorch.org/whl/cpu/torch_stable.html
+          python3 -m pip install openai-whisper==20230314 onnxruntime onnx
+
+      - name: export ${{ matrix.model }}
+        shell: bash
+        run: |
+          cd scripts/whisper
+          model=${{ matrix.model }}
+          echo "model: $model"
+          if [[ $model == distil-medium.en ]]; then
+            wget -q -O distil-medium-en-original-model.bin https://huggingface.co/distil-whisper/distil-medium.en/resolve/main/original-model.bin
+            ls -lh
+          elif [[ $model == distil-large-v2 ]]; then
+            wget -q -O distil-large-v2-original-model.bin https://huggingface.co/distil-whisper/distil-large-v2/resolve/main/original-model.bin
+            ls -lh
+          elif [[ $model == distil-small.en ]]; then
+            wget -q -O distil-small-en-original-model.bin https://huggingface.co/distil-whisper/distil-small.en/resolve/main/original-model.bin
+            ls -lh
+          elif [[ $model == medium-aishell ]]; then
+            wget -q -O medium-aishell.pt https://huggingface.co/yuekai/icefall_asr_aishell_whisper/resolve/main/exp_medium/whisper-medium-aishell1-epoch-10-avg-4.pt
+            ls -lh
+          fi
+          python3 ./export-onnx.py --model ${{ matrix.model }}
+          # python3 -m onnxruntime.tools.convert_onnx_models_to_ort --optimization_style=Fixed ./
+          #
+          if [[ $model == medium-aishell ]]; then
+            ls -lh *.onnx
+            rm -fv medium-aishell-encoder.onnx
+            rm -fv medium-aishell-decoder.onnx
+          fi
+
+
+          ls -lh
+
+          ls -lh ~/.cache/whisper || true
+          ls -lh distil*original-model.bin || true
+          rm -rf ~/.cache/whisper
+          rm -f distil*original-model.bin
+          rm -f medium-aishell.pt
+
+          src=sherpa-onnx-whisper-${{ matrix.model }}
+
+          cd ..
+          mv whisper $src
+
+          echo "------------------------------"
+
+          cd $src
+          du -h -d1 .
+          ls -lh
+          mkdir -p test_wavs
+          cd test_wavs
+          wget -q https://huggingface.co/csukuangfj/sherpa-onnx-whisper-medium.en/resolve/main/test_wavs/0.wav
+          wget -q https://huggingface.co/csukuangfj/sherpa-onnx-whisper-medium.en/resolve/main/test_wavs/1.wav
+          wget -q https://huggingface.co/csukuangfj/sherpa-onnx-whisper-medium.en/resolve/main/test_wavs/8k.wav
+          wget -q https://huggingface.co/csukuangfj/sherpa-onnx-whisper-medium.en/resolve/main/test_wavs/trans.txt
+          cd ../..
+          mv $src ../
+          echo "pwd: $PWD"
+
+          cd ../
+          echo "--------------------"
+          ls -lh
+          ls -lh $src
+          echo "--------------------"
+
+          if [[ $model == large || $model == large-v1 || $model == large-v2 || $model == distil-large-v2 ]]; then
+            #tar cvjf - $src | split --bytes=1024MB - $src.tar.bz2.
+            tar cvjf $src.tar.bz2 $src
+            split -b 1G $src.tar.bz2 $src.tar.bz2.
+            rm $src.tar.bz2
+            # cat $src.tar.gz.* | tar xjf -
+          else
+            tar cvjf $src.tar.bz2 $src
+          fi
+          ls -lh
+
+
+      - name: Release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          file_glob: true
+          file: ./*.tar*
+          overwrite: true
+          repo_name: k2-fsa/sherpa-onnx
+          repo_token: ${{ secrets.UPLOAD_GH_SHERPA_ONNX_TOKEN }}
+          tag: asr-models
+
+      - name: Test ${{ matrix.model }}
+        shell: bash
+        run: |
+          python3 -m pip install kaldi-native-fbank
+          git checkout .
+          model=${{ matrix.model }}
+          src=sherpa-onnx-whisper-$model
+          python3 scripts/whisper/test.py \
+            --encoder $src/$model-encoder.int8.onnx \
+            --decoder $src/$model-decoder.int8.onnx \
+            --tokens $src/$model-tokens.txt \
+            $src/test_wavs/0.wav
+
+      - name: Publish ${{ matrix.model }} to huggingface
+        shell: bash
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          src=sherpa-onnx-whisper-${{ matrix.model }}
+
+          git config --global user.email "csukuangfj@gmail.com"
+          git config --global user.name "Fangjun Kuang"
+
+          export GIT_CLONE_PROTECTION_ACTIVE=false
+
+          GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/csukuangfj/sherpa-onnx-whisper-${{ matrix.model }} huggingface
+
+          if [[ $model != medium-aishell ]]; then
+            rm -rf huggingface/*
+          fi
+
+          if [[ $model == large || $model == large-v1 || $model == large-v2 || $model == distil-large-v2 ]]; then
+            mv $src.tar* ./huggingface
+          else
+            cp -v $src/*.onnx ./huggingface
+            cp -v $src/*tokens* ./huggingface
+            cp -av $src/test_wavs ./huggingface
+          fi
+
+          cd huggingface
+
+          git status
+          ls -lh
+          git lfs track "*gz*"
+          git lfs track "*onnx*"
+
+          git add .
+          git commit -m "upload ${{ matrix.model }}"
+          git push https://csukuangfj:$HF_TOKEN@huggingface.co/csukuangfj/sherpa-onnx-whisper-${{ matrix.model }} main

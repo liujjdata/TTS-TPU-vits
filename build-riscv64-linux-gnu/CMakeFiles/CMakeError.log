@@ -1,0 +1,188 @@
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wshorten64to32 failed with the following output:
+Change Dir: /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-NyHyjg
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1fcb2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1fcb2.dir/build.make CMakeFiles/cmTC_1fcb2.dir/build
+gmake[1]: Entering directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-NyHyjg'
+Building CXX object CMakeFiles/cmTC_1fcb2.dir/src.cxx.o
+/workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin/riscv64-unknown-linux-gnu-g++ -DCOMPILER_SUPPORT_Wshorten64to32  -march=rv64gc -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Werror   -Wshorten-64-to-32 -o CMakeFiles/cmTC_1fcb2.dir/src.cxx.o -c /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-NyHyjg/src.cxx
+riscv64-unknown-linux-gnu-g++: error: unrecognized command-line option '-Wshorten-64-to-32'
+gmake[1]: *** [CMakeFiles/cmTC_1fcb2.dir/build.make:78: CMakeFiles/cmTC_1fcb2.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-NyHyjg'
+gmake: *** [Makefile:127: cmTC_1fcb2/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wenumconversion failed with the following output:
+Change Dir: /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-vzMDx1
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4b866/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4b866.dir/build.make CMakeFiles/cmTC_4b866.dir/build
+gmake[1]: Entering directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-vzMDx1'
+Building CXX object CMakeFiles/cmTC_4b866.dir/src.cxx.o
+/workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin/riscv64-unknown-linux-gnu-g++ -DCOMPILER_SUPPORT_Wenumconversion  -march=rv64gc -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Werror   -Wenum-conversion -o CMakeFiles/cmTC_4b866.dir/src.cxx.o -c /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-vzMDx1/src.cxx
+cc1plus: error: command-line option '-Wenum-conversion' is valid for C/ObjC but not for C++ [-Werror]
+cc1plus: all warnings being treated as errors
+gmake[1]: *** [CMakeFiles/cmTC_4b866.dir/build.make:78: CMakeFiles/cmTC_4b866.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-vzMDx1'
+gmake: *** [Makefile:127: cmTC_4b866/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wcpp11extensions failed with the following output:
+Change Dir: /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-6ZkphI
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2747a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2747a.dir/build.make CMakeFiles/cmTC_2747a.dir/build
+gmake[1]: Entering directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-6ZkphI'
+Building CXX object CMakeFiles/cmTC_2747a.dir/src.cxx.o
+/workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin/riscv64-unknown-linux-gnu-g++ -DCOMPILER_SUPPORT_Wcpp11extensions  -march=rv64gc -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Werror   -Wc++11-extensions -o CMakeFiles/cmTC_2747a.dir/src.cxx.o -c /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-6ZkphI/src.cxx
+riscv64-unknown-linux-gnu-g++: error: unrecognized command-line option '-Wc++11-extensions'; did you mean '-fms-extensions'?
+gmake[1]: *** [CMakeFiles/cmTC_2747a.dir/build.make:78: CMakeFiles/cmTC_2747a.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-6ZkphI'
+gmake: *** [Makefile:127: cmTC_2747a/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd981 failed with the following output:
+Change Dir: /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-KOImQ9
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_98fc8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_98fc8.dir/build.make CMakeFiles/cmTC_98fc8.dir/build
+gmake[1]: Entering directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-KOImQ9'
+Building CXX object CMakeFiles/cmTC_98fc8.dir/src.cxx.o
+/workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin/riscv64-unknown-linux-gnu-g++ -DCOMPILER_SUPPORT_wd981  -march=rv64gc -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -wd981 -o CMakeFiles/cmTC_98fc8.dir/src.cxx.o -c /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-KOImQ9/src.cxx
+riscv64-unknown-linux-gnu-g++: error: unrecognized command-line option '-wd981'
+gmake[1]: *** [CMakeFiles/cmTC_98fc8.dir/build.make:78: CMakeFiles/cmTC_98fc8.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-KOImQ9'
+gmake: *** [Makefile:127: cmTC_98fc8/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd2304 failed with the following output:
+Change Dir: /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-y6qV6t
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1caff/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1caff.dir/build.make CMakeFiles/cmTC_1caff.dir/build
+gmake[1]: Entering directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-y6qV6t'
+Building CXX object CMakeFiles/cmTC_1caff.dir/src.cxx.o
+/workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin/riscv64-unknown-linux-gnu-g++ -DCOMPILER_SUPPORT_wd2304  -march=rv64gc -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -wd2304 -o CMakeFiles/cmTC_1caff.dir/src.cxx.o -c /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-y6qV6t/src.cxx
+riscv64-unknown-linux-gnu-g++: error: unrecognized command-line option '-wd2304'
+gmake[1]: *** [CMakeFiles/cmTC_1caff.dir/build.make:78: CMakeFiles/cmTC_1caff.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-y6qV6t'
+gmake: *** [Makefile:127: cmTC_1caff/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_STRICTANSI failed with the following output:
+Change Dir: /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-Q7dOgI
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d2fd4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d2fd4.dir/build.make CMakeFiles/cmTC_d2fd4.dir/build
+gmake[1]: Entering directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-Q7dOgI'
+Building CXX object CMakeFiles/cmTC_d2fd4.dir/src.cxx.o
+/workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin/riscv64-unknown-linux-gnu-g++ -DCOMPILER_SUPPORT_STRICTANSI  -march=rv64gc -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -strict-ansi -o CMakeFiles/cmTC_d2fd4.dir/src.cxx.o -c /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-Q7dOgI/src.cxx
+riscv64-unknown-linux-gnu-g++: error: unrecognized command-line option '-strict-ansi'; did you mean '-fstrict-enums'?
+gmake[1]: *** [CMakeFiles/cmTC_d2fd4.dir/build.make:78: CMakeFiles/cmTC_d2fd4.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-Q7dOgI'
+gmake: *** [Makefile:127: cmTC_d2fd4/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Qunusedarguments failed with the following output:
+Change Dir: /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-bozLP7
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9cf6d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9cf6d.dir/build.make CMakeFiles/cmTC_9cf6d.dir/build
+gmake[1]: Entering directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-bozLP7'
+Building CXX object CMakeFiles/cmTC_9cf6d.dir/src.cxx.o
+/workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin/riscv64-unknown-linux-gnu-g++ -DCOMPILER_SUPPORT_Qunusedarguments  -march=rv64gc -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -Qunused-arguments -o CMakeFiles/cmTC_9cf6d.dir/src.cxx.o -c /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-bozLP7/src.cxx
+riscv64-unknown-linux-gnu-g++: error: unrecognized command-line option '-Qunused-arguments'
+gmake[1]: *** [CMakeFiles/cmTC_9cf6d.dir/build.make:78: CMakeFiles/cmTC_9cf6d.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-bozLP7'
+gmake: *** [Makefile:127: cmTC_9cf6d/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+
+Looking for a Fortran compiler failed with the following output:
+-- The Fortran compiler identification is unknown
+CMake Error at CMakeLists.txt:2 (project):
+  No CMAKE_Fortran_COMPILER could be found.
+
+  Tell CMake where to find the compiler by setting either the environment
+  variable "FC" or the CMake cache entry CMAKE_Fortran_COMPILER to the full
+  path to the compiler, or to the compiler name if it is in the PATH.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/eigen-build/blas/CMakeFiles/CheckFortran/CMakeFiles/CMakeOutput.log".
+See also "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/eigen-build/blas/CMakeFiles/CheckFortran/CMakeFiles/CMakeError.log".
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-ZcgpXn
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ac100/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ac100.dir/build.make CMakeFiles/cmTC_ac100.dir/build
+gmake[1]: Entering directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-ZcgpXn'
+Building C object CMakeFiles/cmTC_ac100.dir/src.c.o
+/workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin/riscv64-unknown-linux-gnu-gcc -DCMAKE_HAVE_LIBC_PTHREAD  -march=rv64gc  -o CMakeFiles/cmTC_ac100.dir/src.c.o -c /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-ZcgpXn/src.c
+Linking C executable cmTC_ac100
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac100.dir/link.txt --verbose=1
+/workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin/riscv64-unknown-linux-gnu-gcc -march=rv64gc  CMakeFiles/cmTC_ac100.dir/src.c.o -o cmTC_ac100 
+/workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.4.0/../../../../riscv64-unknown-linux-gnu/bin/ld: CMakeFiles/cmTC_ac100.dir/src.c.o: in function `main':
+src.c:(.text+0x2e): undefined reference to `pthread_create'
+/workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.4.0/../../../../riscv64-unknown-linux-gnu/bin/ld: src.c:(.text+0x3c): undefined reference to `pthread_detach'
+/workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.4.0/../../../../riscv64-unknown-linux-gnu/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_cancel'
+/workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.4.0/../../../../riscv64-unknown-linux-gnu/bin/ld: src.c:(.text+0x5a): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_ac100.dir/build.make:99: cmTC_ac100] Error 1
+gmake[1]: Leaving directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-ZcgpXn'
+gmake: *** [Makefile:127: cmTC_ac100/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-nEINFl
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9d1a0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9d1a0.dir/build.make CMakeFiles/cmTC_9d1a0.dir/build
+gmake[1]: Entering directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-nEINFl'
+Building C object CMakeFiles/cmTC_9d1a0.dir/CheckFunctionExists.c.o
+/workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin/riscv64-unknown-linux-gnu-gcc   -march=rv64gc -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_9d1a0.dir/CheckFunctionExists.c.o -c /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-nEINFl/CheckFunctionExists.c
+Linking C executable cmTC_9d1a0
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d1a0.dir/link.txt --verbose=1
+/workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin/riscv64-unknown-linux-gnu-gcc -march=rv64gc -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_9d1a0.dir/CheckFunctionExists.c.o -o cmTC_9d1a0  -lpthreads 
+/workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.4.0/../../../../riscv64-unknown-linux-gnu/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_9d1a0.dir/build.make:99: cmTC_9d1a0] Error 1
+gmake[1]: Leaving directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-nEINFl'
+gmake: *** [Makefile:127: cmTC_9d1a0/fast] Error 2
+
+
+

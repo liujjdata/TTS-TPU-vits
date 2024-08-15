@@ -1,0 +1,3 @@
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_native_fbank-subbuild/CMakeFiles/kaldi_native_fbank-populate.dir
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_native_fbank-subbuild/CMakeFiles/edit_cache.dir
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_native_fbank-subbuild/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/cppjieba-subbuild/CMakeFiles/cppjieba-populate.dir
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/cppjieba-subbuild/CMakeFiles/edit_cache.dir
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/cppjieba-subbuild/CMakeFiles/rebuild_cache.dir

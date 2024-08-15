@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/cppjieba-subbuild/CMakeFiles/cppjieba-populate"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/cppjieba-subbuild/CMakeFiles/cppjieba-populate.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/cppjieba-subbuild/CMakeFiles/cppjieba-populate-complete.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/cppjieba-subbuild/cppjieba-populate-prefix/src/cppjieba-populate-stamp/cppjieba-populate-build.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/cppjieba-subbuild/cppjieba-populate-prefix/src/cppjieba-populate-stamp/cppjieba-populate-configure.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/cppjieba-subbuild/cppjieba-populate-prefix/src/cppjieba-populate-stamp/cppjieba-populate-download.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/cppjieba-subbuild/cppjieba-populate-prefix/src/cppjieba-populate-stamp/cppjieba-populate-install.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/cppjieba-subbuild/cppjieba-populate-prefix/src/cppjieba-populate-stamp/cppjieba-populate-mkdir.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/cppjieba-subbuild/cppjieba-populate-prefix/src/cppjieba-populate-stamp/cppjieba-populate-patch.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/cppjieba-subbuild/cppjieba-populate-prefix/src/cppjieba-populate-stamp/cppjieba-populate-test.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/cppjieba-subbuild/cppjieba-populate-prefix/src/cppjieba-populate-stamp/cppjieba-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"cppjieba-populate"
+		],
+		"name" : "cppjieba-populate"
+	}
+}

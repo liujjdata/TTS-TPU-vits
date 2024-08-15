@@ -1,0 +1,14 @@
+# Target labels
+ piper_phonemize-populate
+# Source files and their labels
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/piper_phonemize-subbuild/CMakeFiles/piper_phonemize-populate
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/piper_phonemize-subbuild/CMakeFiles/piper_phonemize-populate.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/piper_phonemize-subbuild/CMakeFiles/piper_phonemize-populate-complete.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/piper_phonemize-subbuild/piper_phonemize-populate-prefix/src/piper_phonemize-populate-stamp/piper_phonemize-populate-build.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/piper_phonemize-subbuild/piper_phonemize-populate-prefix/src/piper_phonemize-populate-stamp/piper_phonemize-populate-configure.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/piper_phonemize-subbuild/piper_phonemize-populate-prefix/src/piper_phonemize-populate-stamp/piper_phonemize-populate-download.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/piper_phonemize-subbuild/piper_phonemize-populate-prefix/src/piper_phonemize-populate-stamp/piper_phonemize-populate-install.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/piper_phonemize-subbuild/piper_phonemize-populate-prefix/src/piper_phonemize-populate-stamp/piper_phonemize-populate-mkdir.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/piper_phonemize-subbuild/piper_phonemize-populate-prefix/src/piper_phonemize-populate-stamp/piper_phonemize-populate-patch.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/piper_phonemize-subbuild/piper_phonemize-populate-prefix/src/piper_phonemize-populate-stamp/piper_phonemize-populate-test.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/piper_phonemize-subbuild/piper_phonemize-populate-prefix/src/piper_phonemize-populate-stamp/piper_phonemize-populate-update.rule

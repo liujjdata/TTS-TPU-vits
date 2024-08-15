@@ -1,0 +1,99 @@
+name: build
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '.github/workflows/build.yml'
+      - 'CMakeLists.txt'
+      - 'cmake/**'
+      - 'kaldifst/csrc/**'
+      - 'kaldifst/python/**'
+      - 'setup.py'
+  pull_request:
+    branches:
+      - master
+    paths:
+      - '.github/workflows/build.yml'
+      - 'CMakeLists.txt'
+      - 'cmake/**'
+      - 'kaldifst/csrc/**'
+      - 'kaldifst/python/**'
+      - 'setup.py'
+
+  workflow_dispatch:
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: ${{ matrix.os }} ${{ matrix.python-version }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: ccache
+        uses: hendrikmuhs/ccache-action@v1.2
+        with:
+          key: ${{ matrix.os }}-${{ matrix.python-version }}
+
+      - name: Setup Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install Python dependencies
+        run: |
+          pip3 install -qq wheel twine dataclasses numpy typing_extensions setuptools
+
+      - name: Display CMake version
+        run: |
+          cmake --version
+          cmake --help
+
+      - name: Build
+        shell: bash
+        run: |
+          export CMAKE_CXX_COMPILER_LAUNCHER=ccache
+          export PATH="/usr/lib/ccache:/usr/local/opt/ccache/libexec:$PATH"
+          cmake --version
+
+          mkdir build
+          cd build
+          cmake -DKALDIFST_BUILD_TESTS=ON ..
+          make -j2 VERBOSE=1
+
+          ls -l lib
+          ls -l bin
+          ctest --verbose --output-on-failure -E k2
+
+
+      - name: Display dependencies ubuntu
+        if: startsWith(matrix.os, 'ubuntu')
+        shell: bash
+        run: |
+          cd build
+
+          ldd lib/libkaldifst_core.so
+
+          readelf -d lib/libkaldifst_core.so
+
+      - name: Display dependencies macos
+        if: startsWith(matrix.os, 'macos')
+        shell: bash
+        run: |
+          cd build
+
+          otool -L lib/libkaldifst_core.dylib
+
+          otool -l lib/libkaldifst_core.dylib

@@ -1,0 +1,32 @@
+_deps/espeak_ng-build/src/libespeak-ng/CMakeFiles/espeak-ng.dir/ieee80.c.o: \
+ /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-src/src/libespeak-ng/ieee80.c \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/stdc-predef.h \
+ /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-src/src/include/compat/math.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/math.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/bits/libc-header-start.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/features.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/sys/cdefs.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/bits/wordsize.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/bits/long-double.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/gnu/stubs.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/gnu/stubs-lp64d.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/bits/types.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/bits/timesize.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/bits/typesizes.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/bits/time64.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/bits/math-vector.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/bits/libm-simd-decl-stubs.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/bits/floatn.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/bits/floatn-common.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/bits/flt-eval-method.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/bits/fp-logb.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/bits/fp-fast.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/bits/mathcalls-helper-functions.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/bits/mathcalls.h \
+ /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-src/src/include/compat/stdint.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/lib/gcc/riscv64-unknown-linux-gnu/10.4.0/include/stdint.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/stdint.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/bits/wchar.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/bits/stdint-intn.h \
+ /workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/sysroot/usr/include/bits/stdint-uintn.h \
+ /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-src/src/libespeak-ng/ieee80.h

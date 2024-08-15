@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=/usr/local/bin/cmake;-P;/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_native_fbank-subbuild/kaldi_native_fbank-populate-prefix/src/kaldi_native_fbank-populate-stamp/download-kaldi_native_fbank-populate.cmake;COMMAND;/usr/local/bin/cmake;-P;/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_native_fbank-subbuild/kaldi_native_fbank-populate-prefix/src/kaldi_native_fbank-populate-stamp/verify-kaldi_native_fbank-populate.cmake;COMMAND;/usr/local/bin/cmake;-P;/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_native_fbank-subbuild/kaldi_native_fbank-populate-prefix/src/kaldi_native_fbank-populate-stamp/extract-kaldi_native_fbank-populate.cmake
+source_dir=/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_native_fbank-src
+work_dir=/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps
+url(s)=https://github.com/csukuangfj/kaldi-native-fbank/archive/refs/tags/v1.19.3.tar.gz;https://hub.nuaa.cf/csukuangfj/kaldi-native-fbank/archive/refs/tags/v1.19.3.tar.gz
+hash=SHA256=335fe1daf1b9bfb2a7b6bf03b64c4c4686c39077c57fb8058c02611981676638
+no_extract=
+

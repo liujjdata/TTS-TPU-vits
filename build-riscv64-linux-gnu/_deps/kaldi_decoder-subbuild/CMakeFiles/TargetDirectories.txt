@@ -1,0 +1,3 @@
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/CMakeFiles/kaldi_decoder-populate.dir
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/CMakeFiles/edit_cache.dir
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/CMakeFiles/rebuild_cache.dir

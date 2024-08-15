@@ -1,0 +1,11 @@
+build
+__pycache__
+bak-*
+Testing
+dist
+*.egg-info
+*.svg
+*.gv
+*.fst
+*.scp
+*.ark

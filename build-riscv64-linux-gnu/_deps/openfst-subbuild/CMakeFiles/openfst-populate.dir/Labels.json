@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/CMakeFiles/openfst-populate"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/CMakeFiles/openfst-populate.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/CMakeFiles/openfst-populate-complete.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/openfst-populate-prefix/src/openfst-populate-stamp/openfst-populate-build.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/openfst-populate-prefix/src/openfst-populate-stamp/openfst-populate-configure.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/openfst-populate-prefix/src/openfst-populate-stamp/openfst-populate-download.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/openfst-populate-prefix/src/openfst-populate-stamp/openfst-populate-install.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/openfst-populate-prefix/src/openfst-populate-stamp/openfst-populate-mkdir.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/openfst-populate-prefix/src/openfst-populate-stamp/openfst-populate-patch.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/openfst-populate-prefix/src/openfst-populate-stamp/openfst-populate-test.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/openfst-subbuild/openfst-populate-prefix/src/openfst-populate-stamp/openfst-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"openfst-populate"
+		],
+		"name" : "openfst-populate"
+	}
+}

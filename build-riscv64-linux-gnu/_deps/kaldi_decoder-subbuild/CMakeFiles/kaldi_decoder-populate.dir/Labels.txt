@@ -1,0 +1,14 @@
+# Target labels
+ kaldi_decoder-populate
+# Source files and their labels
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/CMakeFiles/kaldi_decoder-populate
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/CMakeFiles/kaldi_decoder-populate.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/CMakeFiles/kaldi_decoder-populate-complete.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/kaldi_decoder-populate-prefix/src/kaldi_decoder-populate-stamp/kaldi_decoder-populate-build.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/kaldi_decoder-populate-prefix/src/kaldi_decoder-populate-stamp/kaldi_decoder-populate-configure.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/kaldi_decoder-populate-prefix/src/kaldi_decoder-populate-stamp/kaldi_decoder-populate-download.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/kaldi_decoder-populate-prefix/src/kaldi_decoder-populate-stamp/kaldi_decoder-populate-install.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/kaldi_decoder-populate-prefix/src/kaldi_decoder-populate-stamp/kaldi_decoder-populate-mkdir.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/kaldi_decoder-populate-prefix/src/kaldi_decoder-populate-stamp/kaldi_decoder-populate-patch.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/kaldi_decoder-populate-prefix/src/kaldi_decoder-populate-stamp/kaldi_decoder-populate-test.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/kaldi_decoder-populate-prefix/src/kaldi_decoder-populate-stamp/kaldi_decoder-populate-update.rule

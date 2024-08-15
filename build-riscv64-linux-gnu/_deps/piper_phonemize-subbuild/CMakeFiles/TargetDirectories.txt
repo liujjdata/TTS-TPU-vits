@@ -1,0 +1,3 @@
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/piper_phonemize-subbuild/CMakeFiles/piper_phonemize-populate.dir
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/piper_phonemize-subbuild/CMakeFiles/edit_cache.dir
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/piper_phonemize-subbuild/CMakeFiles/rebuild_cache.dir

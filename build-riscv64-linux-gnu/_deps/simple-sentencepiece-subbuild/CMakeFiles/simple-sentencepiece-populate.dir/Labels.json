@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/CMakeFiles/simple-sentencepiece-populate"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/CMakeFiles/simple-sentencepiece-populate.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/CMakeFiles/simple-sentencepiece-populate-complete.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/simple-sentencepiece-populate-prefix/src/simple-sentencepiece-populate-stamp/simple-sentencepiece-populate-build.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/simple-sentencepiece-populate-prefix/src/simple-sentencepiece-populate-stamp/simple-sentencepiece-populate-configure.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/simple-sentencepiece-populate-prefix/src/simple-sentencepiece-populate-stamp/simple-sentencepiece-populate-download.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/simple-sentencepiece-populate-prefix/src/simple-sentencepiece-populate-stamp/simple-sentencepiece-populate-install.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/simple-sentencepiece-populate-prefix/src/simple-sentencepiece-populate-stamp/simple-sentencepiece-populate-mkdir.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/simple-sentencepiece-populate-prefix/src/simple-sentencepiece-populate-stamp/simple-sentencepiece-populate-patch.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/simple-sentencepiece-populate-prefix/src/simple-sentencepiece-populate-stamp/simple-sentencepiece-populate-test.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/simple-sentencepiece-populate-prefix/src/simple-sentencepiece-populate-stamp/simple-sentencepiece-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"simple-sentencepiece-populate"
+		],
+		"name" : "simple-sentencepiece-populate"
+	}
+}

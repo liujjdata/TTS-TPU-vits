@@ -1,0 +1,14 @@
+# Target labels
+ kaldi_native_fbank-populate
+# Source files and their labels
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_native_fbank-subbuild/CMakeFiles/kaldi_native_fbank-populate
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_native_fbank-subbuild/CMakeFiles/kaldi_native_fbank-populate.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_native_fbank-subbuild/CMakeFiles/kaldi_native_fbank-populate-complete.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_native_fbank-subbuild/kaldi_native_fbank-populate-prefix/src/kaldi_native_fbank-populate-stamp/kaldi_native_fbank-populate-build.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_native_fbank-subbuild/kaldi_native_fbank-populate-prefix/src/kaldi_native_fbank-populate-stamp/kaldi_native_fbank-populate-configure.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_native_fbank-subbuild/kaldi_native_fbank-populate-prefix/src/kaldi_native_fbank-populate-stamp/kaldi_native_fbank-populate-download.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_native_fbank-subbuild/kaldi_native_fbank-populate-prefix/src/kaldi_native_fbank-populate-stamp/kaldi_native_fbank-populate-install.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_native_fbank-subbuild/kaldi_native_fbank-populate-prefix/src/kaldi_native_fbank-populate-stamp/kaldi_native_fbank-populate-mkdir.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_native_fbank-subbuild/kaldi_native_fbank-populate-prefix/src/kaldi_native_fbank-populate-stamp/kaldi_native_fbank-populate-patch.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_native_fbank-subbuild/kaldi_native_fbank-populate-prefix/src/kaldi_native_fbank-populate-stamp/kaldi_native_fbank-populate-test.rule
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_native_fbank-subbuild/kaldi_native_fbank-populate-prefix/src/kaldi_native_fbank-populate-stamp/kaldi_native_fbank-populate-update.rule

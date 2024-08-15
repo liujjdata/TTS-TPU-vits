@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/CMakeFiles/kaldifst-populate"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/CMakeFiles/kaldifst-populate.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/CMakeFiles/kaldifst-populate-complete.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/kaldifst-populate-prefix/src/kaldifst-populate-stamp/kaldifst-populate-build.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/kaldifst-populate-prefix/src/kaldifst-populate-stamp/kaldifst-populate-configure.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/kaldifst-populate-prefix/src/kaldifst-populate-stamp/kaldifst-populate-download.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/kaldifst-populate-prefix/src/kaldifst-populate-stamp/kaldifst-populate-install.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/kaldifst-populate-prefix/src/kaldifst-populate-stamp/kaldifst-populate-mkdir.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/kaldifst-populate-prefix/src/kaldifst-populate-stamp/kaldifst-populate-patch.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/kaldifst-populate-prefix/src/kaldifst-populate-stamp/kaldifst-populate-test.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/kaldifst-populate-prefix/src/kaldifst-populate-stamp/kaldifst-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"kaldifst-populate"
+		],
+		"name" : "kaldifst-populate"
+	}
+}

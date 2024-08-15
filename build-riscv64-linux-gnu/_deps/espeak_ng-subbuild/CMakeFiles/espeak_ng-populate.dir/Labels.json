@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/CMakeFiles/espeak_ng-populate"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/CMakeFiles/espeak_ng-populate.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/CMakeFiles/espeak_ng-populate-complete.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/espeak_ng-populate-prefix/src/espeak_ng-populate-stamp/espeak_ng-populate-build.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/espeak_ng-populate-prefix/src/espeak_ng-populate-stamp/espeak_ng-populate-configure.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/espeak_ng-populate-prefix/src/espeak_ng-populate-stamp/espeak_ng-populate-download.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/espeak_ng-populate-prefix/src/espeak_ng-populate-stamp/espeak_ng-populate-install.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/espeak_ng-populate-prefix/src/espeak_ng-populate-stamp/espeak_ng-populate-mkdir.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/espeak_ng-populate-prefix/src/espeak_ng-populate-stamp/espeak_ng-populate-patch.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/espeak_ng-populate-prefix/src/espeak_ng-populate-stamp/espeak_ng-populate-test.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/espeak_ng-subbuild/espeak_ng-populate-prefix/src/espeak_ng-populate-stamp/espeak_ng-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"espeak_ng-populate"
+		],
+		"name" : "espeak_ng-populate"
+	}
+}

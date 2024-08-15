@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/CMakeFiles/kaldi_decoder-populate"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/CMakeFiles/kaldi_decoder-populate.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/CMakeFiles/kaldi_decoder-populate-complete.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/kaldi_decoder-populate-prefix/src/kaldi_decoder-populate-stamp/kaldi_decoder-populate-build.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/kaldi_decoder-populate-prefix/src/kaldi_decoder-populate-stamp/kaldi_decoder-populate-configure.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/kaldi_decoder-populate-prefix/src/kaldi_decoder-populate-stamp/kaldi_decoder-populate-download.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/kaldi_decoder-populate-prefix/src/kaldi_decoder-populate-stamp/kaldi_decoder-populate-install.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/kaldi_decoder-populate-prefix/src/kaldi_decoder-populate-stamp/kaldi_decoder-populate-mkdir.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/kaldi_decoder-populate-prefix/src/kaldi_decoder-populate-stamp/kaldi_decoder-populate-patch.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/kaldi_decoder-populate-prefix/src/kaldi_decoder-populate-stamp/kaldi_decoder-populate-test.rule"
+		},
+		{
+			"file" : "/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldi_decoder-subbuild/kaldi_decoder-populate-prefix/src/kaldi_decoder-populate-stamp/kaldi_decoder-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"kaldi_decoder-populate"
+		],
+		"name" : "kaldi_decoder-populate"
+	}
+}

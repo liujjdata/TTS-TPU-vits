@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=/usr/local/bin/cmake;-P;/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/simple-sentencepiece-populate-prefix/src/simple-sentencepiece-populate-stamp/download-simple-sentencepiece-populate.cmake;COMMAND;/usr/local/bin/cmake;-P;/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/simple-sentencepiece-populate-prefix/src/simple-sentencepiece-populate-stamp/verify-simple-sentencepiece-populate.cmake;COMMAND;/usr/local/bin/cmake;-P;/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/simple-sentencepiece-populate-prefix/src/simple-sentencepiece-populate-stamp/extract-simple-sentencepiece-populate.cmake
+source_dir=/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-src
+work_dir=/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps
+url(s)=https://github.com/pkufool/simple-sentencepiece/archive/refs/tags/v0.7.tar.gz;https://hub.nuaa.cf/pkufool/simple-sentencepiece/archive/refs/tags/v0.7.tar.gz
+hash=SHA256=1748a822060a35baa9f6609f84efc8eb54dc0e74b9ece3d82367b7119fdc75af
+no_extract=
+

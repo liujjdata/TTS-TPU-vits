@@ -1,0 +1,3 @@
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/CMakeFiles/simple-sentencepiece-populate.dir
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/CMakeFiles/edit_cache.dir
+/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/simple-sentencepiece-subbuild/CMakeFiles/rebuild_cache.dir

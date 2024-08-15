@@ -1,0 +1,1 @@
+/workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin/riscv64-unknown-linux-gnu-g++ -fPIC -march=rv64gc -O3 -DNDEBUG -shared -Wl,-soname,libssentencepiece_core.so -o ../../../../lib/libssentencepiece_core.so CMakeFiles/ssentencepiece_core.dir/ssentencepiece.cc.o  -Wl,-rpath,"\$ORIGIN:" -lpthread 

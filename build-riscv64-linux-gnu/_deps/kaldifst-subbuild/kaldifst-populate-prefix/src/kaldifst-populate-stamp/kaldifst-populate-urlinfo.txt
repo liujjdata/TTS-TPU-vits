@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=/usr/local/bin/cmake;-P;/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/kaldifst-populate-prefix/src/kaldifst-populate-stamp/download-kaldifst-populate.cmake;COMMAND;/usr/local/bin/cmake;-P;/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/kaldifst-populate-prefix/src/kaldifst-populate-stamp/verify-kaldifst-populate.cmake;COMMAND;/usr/local/bin/cmake;-P;/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-subbuild/kaldifst-populate-prefix/src/kaldifst-populate-stamp/extract-kaldifst-populate.cmake
+source_dir=/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps/kaldifst-src
+work_dir=/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/_deps
+url(s)=https://github.com/k2-fsa/kaldifst/archive/refs/tags/v1.7.11.tar.gz
+hash=SHA256=b43b3332faa2961edc730e47995a58cd4e22ead21905d55b0c4a41375b4a525f
+no_extract=
+
