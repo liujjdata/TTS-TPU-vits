@@ -1,101 +1,81 @@
-### Supported functions
+# 实时语音识别 Demo （using zipformer）
+## 1. 获取代码
+执行`git clone https://github.com/liujjdata/TTS-TPU-vits.git`。
 
-|Speech recognition| Speech synthesis | Speaker verification | Speaker identification |
-|------------------|------------------|----------------------|------------------------|
-|   ✔️              |         ✔️        |          ✔️           |                ✔️       |
+## 2. 环境准备
+- 获取docker镜像，创建容器并进入：`docker run --privileged --name mytpudev -v $PWD:/workspace -it sophgo/tpuc_dev:latest`。执行完这一命令后，会进入docker，后续步骤都在`mytpudev`容器中执行。
 
-| Spoken Language identification | Audio tagging | Voice activity detection | Keyword spotting |
-|--------------------------------|---------------|--------------------------|------------------|
-|                 ✔️              |          ✔️    |                ✔️         |         ✔️        |
+* 若是在x86机器上模拟运行，需要在docker内执行。按以下步骤操作：
+ 1. 获取`cvitek_tpu_sdk_x86`，然后执行`source cvitek_tpu_sdk_x86/envs_tpu_sdk.sh`。
+ 2. 设置TPU SDK路径，`export TPU_SDK_PATH=/workspace/cvitek_tpu_sdk_x86`。
 
-### Supported platforms
+* 若是在板子上实测，需要在x86机器上完成交叉编译，按以下步骤操作：
+ 1. 获取cvitek_tpu_sdk，然后执行`source cvitek_tpu_sdk/envs_tpu_sdk.sh`，这里的cvitek_tpu_sdk是可以在板子上运行cviruntime。
+ 2. 下载交叉编译工具 wget https://occ-oss-prod.oss-cn-hangzhou.aliyuncs.com/resource//1705395627867/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1-20240115.tar.gz 。
+ 3. 设置环境变量 export PATH=/workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin:$PATH。[获取riscv-gnu-toolchain并设置环境变量](https://k2-fsa.github.io/sherpa/onnx/install/riscv64-embedded-linux.html#install-toolchain)，注意这里帖子是2.6.1版本。
+ 4. 设置TPU SDK路径，`export TPU_SDK_PATH=/workspace/cvitek_tpu_sdk`。
 
-|Architecture| Android          | iOS           | Windows    | macOS | linux |
-|------------|------------------|---------------|------------|-------|-------|
-|   x64      |  ✔️               |               |   ✔️        | ✔️     |  ✔️    |
-|   x86      |  ✔️               |               |   ✔️        |       |       |
-|   arm64    |  ✔️               | ✔️             |   ✔️        | ✔️     |  ✔️    |
-|   arm32    |  ✔️               |               |            |       |  ✔️    |
-|   riscv64  |                  |               |            |       |  ✔️    |
+## 3.1 编译在docker的sample
 
+\* 若要与麦克风交互，安装ALSA音频框架
+```sh
+sudo apt-get update -y
+sudo apt-get install -y alsa-utils libasound2-dev
+```
 
-### Supported programming languages
+docker内执行`cd TTS-TPU-vits && mkdir build && cd build`。
+若要在X86机器模拟运行，执行：
+```sh
+cmake -DCMAKE_BUILD_TYPE=Release -DTPU_SDK_PATH=$TPU_SDK_PATH .. # X86机器模拟运行
+make clean && make -j6
+```
+## 3.2 若要在板子上运行，alsa库和项目源码、依赖都需交叉编译，执行
+```sh
+bash build-riscv64-linux-gnu.sh # 在X86上交叉编译
+```
+编译完成后，会在`build-riscv64-linux-gnu/bin`目录得到多个可执行文件，`sherpa-onnx-offline-tts`是tts的可执行文件。
 
-| C++ | C  | Python | C# | Java | JavaScript | Kotlin | Swift | Go | Dart |
-|-----|----|--------|----|------|------------|--------|-------|----|------|
-| ✔️   | ✔️  | ✔️      | ✔️  |  ✔️   | ✔️          | ✔️      |  ✔️    | ✔️  |  ✔️   |
-
-It also supports WebAssembly.
-
-## Introduction
+## 4. 运行
+- [下载cvimodel模型和token文件](https://drive.google.com/drive/folders/10X38V8oKOC2nrDw-9Aw9sKk7gNYCkXoV?usp=sharing)
+- TTS文字转语音：命令行执行下列命令，
+  ```sh
+  ./build-riscv64-linux-gnu/bin/sherpa-onnx-offline-tts \
+  --vits-model=./tts_ch_100.cvimodel \
+  --vits-dict-dir=./vits-zh-hf-fanchen-C/dict \
+  --vits-lexicon=./vits-zh-hf-fanchen-C/lexicon.txt \
+  --vits-tokens=./vits-zh-hf-fanchen-C/tokens.txt \
+  --vits-noise-scale=0  \
+  --vits-noise-scale-w=0 \
+  --vits-length-scale=1 \
+  --sid=0 \
+  --output-filename="./value-2x.wav" \
+  "大家好，我是算能科技的小音。"
+  ```
+--vits-length-scale参数是对语速的控制，值越大语速越慢。
+--sid参数是说话人的选择，模型一共有187个说话人。
+# Introduction
 
 This repository supports running the following functions **locally**
 
-  - Speech-to-text (i.e., ASR); both streaming and non-streaming are supported
+  - Speech-to-text (i.e., ASR)
   - Text-to-speech (i.e., TTS)
   - Speaker identification
-  - Speaker verification
-  - Spoken language identification
-  - Audio tagging
-  - VAD (e.g., [silero-vad](https://github.com/snakers4/silero-vad))
-  - Keyword spotting
 
 on the following platforms and operating systems:
 
-  - x86, ``x86_64``, 32-bit ARM, 64-bit ARM (arm64, aarch64), RISC-V (riscv64)
-  - Linux, macOS, Windows, openKylin
-  - Android, WearOS
+  - Linux, macOS, Windows
+  - Android
   - iOS
-  - NodeJS
-  - WebAssembly
-  - [Raspberry Pi](https://www.raspberrypi.com/)
-  - [RV1126](https://www.rock-chips.com/uploads/pdf/2022.8.26/191/RV1126%20Brief%20Datasheet.pdf)
-  - [LicheePi4A](https://sipeed.com/licheepi4a)
-  - [VisionFive 2](https://www.starfivetech.com/en/site/boards)
-  - [旭日X3派](https://developer.horizon.ai/api/v1/fileData/documents_pi/index.html)
+  - Raspberry Pi
   - etc
 
-with the following APIs
-
-  - C++, C, Python, Go, ``C#``
-  - Java, Kotlin, JavaScript
-  - Swift
-  - Dart
-
-### Links for pre-built Android APKs
-
-| Description                    | URL                                                                                     | 中国用户                                                                             |
-|--------------------------------|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| Streaming speech recognition             | [Address](https://k2-fsa.github.io/sherpa/onnx/android/apk.html)                        | [点此](https://k2-fsa.github.io/sherpa/onnx/android/apk-cn.html)                        |
-| Text-to-speech | [Address](https://k2-fsa.github.io/sherpa/onnx/tts/apk-engine.html)                     | [点此](https://k2-fsa.github.io/sherpa/onnx/tts/apk-engine-cn.html)                     |
-|Voice activity detection (VAD) | [Address](https://k2-fsa.github.io/sherpa/onnx/vad/apk.html) | [点此](https://k2-fsa.github.io/sherpa/onnx/vad/apk-cn.html)|
-|VAD + non-streaming speech recognition| [Address](https://k2-fsa.github.io/sherpa/onnx/vad/apk-asr.html)| [点此](https://k2-fsa.github.io/sherpa/onnx/vad/apk-asr-cn.html)|
-|Two-pass speech recognition| [Address](https://k2-fsa.github.io/sherpa/onnx/android/apk-2pass.html)| [点此](https://k2-fsa.github.io/sherpa/onnx/android/apk-2pass-cn.html)|
-| Audio tagging                  | [Address](https://k2-fsa.github.io/sherpa/onnx/audio-tagging/apk.html)                  | [点此](https://k2-fsa.github.io/sherpa/onnx/audio-tagging/apk-cn.html)                  |
-| Audio tagging (WearOS)         | [Address](https://k2-fsa.github.io/sherpa/onnx/audio-tagging/apk-wearos.html)           | [点此](https://k2-fsa.github.io/sherpa/onnx/audio-tagging/apk-wearos-cn.html)           |
-| Speaker identification         | [Address](https://k2-fsa.github.io/sherpa/onnx/speaker-identification/apk.html)         | [点此](https://k2-fsa.github.io/sherpa/onnx/speaker-identification/apk-cn.html)         |
-| Spoken language identification | [Address](https://k2-fsa.github.io/sherpa/onnx/spoken-language-identification/apk.html) | [点此](https://k2-fsa.github.io/sherpa/onnx/spoken-language-identification/apk-cn.html) |
-|Keyword spotting| [Address](https://k2-fsa.github.io/sherpa/onnx/kws/apk.html)| [点此](https://k2-fsa.github.io/sherpa/onnx/kws/apk-cn.html)|
-
-### Links for pre-trained models
-
-| Description                    | URL                                                                                                                            |
-|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| Speech recognition (speech to text, ASR)             | [Address](https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models)              |
-| Text-to-speech (TTS)                 | [Address](https://github.com/k2-fsa/sherpa-onnx/releases/tag/tts-models)                             |
-| VAD | [Address](https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/silero_vad.onnx)|
-| Keyword spotting |[Address](https://github.com/k2-fsa/sherpa-onnx/releases/tag/kws-models)|
-| Audio tagging                  | [Address](https://github.com/k2-fsa/sherpa-onnx/releases/tag/audio-tagging-models)|
-| Speaker identification (Speaker ID)         | [Address](https://github.com/k2-fsa/sherpa-onnx/releases/tag/speaker-recongition-models)|
-| Spoken language identification (Language ID) | See multi-lingual Whisper ASR models from  [Speech recognition](https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models) |
-| Punctuation| [Address](https://github.com/k2-fsa/sherpa-onnx/releases/tag/punctuation-models)|
-
-### Useful links
+# Useful links
 
 - Documentation: https://k2-fsa.github.io/sherpa/onnx/
-- Bilibili 演示视频: https://search.bilibili.com/all?keyword=%E6%96%B0%E4%B8%80%E4%BB%A3Kaldi
+- APK for the text-to-speech engine: https://k2-fsa.github.io/sherpa/onnx/tts/apk-engine.html
+- APK for speaker identification: https://k2-fsa.github.io/sherpa/onnx/speaker-identification/apk.html
 
-### How to reach us
+# How to reach us
 
 Please see
 https://k2-fsa.github.io/sherpa/social-groups.html
