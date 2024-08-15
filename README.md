@@ -1,4 +1,4 @@
-# 实时语音识别 Demo （using zipformer）
+# TTS语音转文字 Demo （using vits）
 ## 1. 获取代码
 执行`git clone https://github.com/liujjdata/TTS-TPU-vits.git`。
 
