@@ -1,4 +1,6 @@
 # TTS语音转文字 Demo （using vits）
+- 话不多说先展示个效果吧
+[1-1.wav](/Test-wav/1-1.wav)
 ## 1. 获取代码
 执行`git clone https://github.com/liujjdata/TTS-TPU-vits.git`。
 
