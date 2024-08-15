@@ -1,6 +1,9 @@
 # TTS语音转文字 Demo （using vits）
 - 话不多说先展示个效果吧
-[1-1.wav](/Test-wav/1-1.wav)
+[1-1.wav](/Test-wav/1-1.wav) [1-2.wav](/Test-wav/1-2.wav) demo1文本：峰会开始喽，现场好多人啊！
+[2-1.wav](/Test-wav/2-1.wav) [2-2.wav](/Test-wav/2-2.wav) demo2文本：大家好，我是算能科技的小音。
+[3-1.wav](/Test-wav/3-1.wav) [3-2.wav](/Test-wav/3-2.wav) demo3文本：各位大佬们今天齐聚杭州峰会。
+
 ## 1. 获取代码
 执行`git clone https://github.com/liujjdata/TTS-TPU-vits.git`。
 
@@ -17,7 +20,7 @@
  3. 设置环境变量 export PATH=/workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin:$PATH。[获取riscv-gnu-toolchain并设置环境变量](https://k2-fsa.github.io/sherpa/onnx/install/riscv64-embedded-linux.html#install-toolchain)，注意这里帖子是2.6.1版本。
  4. 设置TPU SDK路径，`export TPU_SDK_PATH=/workspace/cvitek_tpu_sdk`。
 
-## 3.1 编译在docker的sample
+## 3.1 在x86机器模拟运行，编译在docker的sample
 
 \* 若要与麦克风交互，安装ALSA音频框架
 ```sh
