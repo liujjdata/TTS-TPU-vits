@@ -41,8 +41,8 @@ bash build-riscv64-linux-gnu.sh # 在X86上交叉编译
 编译完成后，会在`build-riscv64-linux-gnu/bin`目录得到多个可执行文件，`sherpa-onnx-offline-tts`是tts的可执行文件。
 
 ## 4. 运行
-- [下载cvimodel模型和token文件](https://drive.google.com/drive/folders/10X38V8oKOC2nrDw-9Aw9sKk7gNYCkXoV?usp=sharing)
-- TTS文字转语音：命令行执行下列命令，
+- TTS的cvimodel模型即将开源，尽情期待！
+- TTS文字转语音：命令行执行下列命令
   ```sh
   ./build-riscv64-linux-gnu/bin/sherpa-onnx-offline-tts \
   --vits-model=./tts_ch_100.cvimodel \
@@ -59,28 +59,8 @@ bash build-riscv64-linux-gnu.sh # 在X86上交叉编译
 --vits-length-scale参数是对语速的控制，值越大语速越慢。
 --sid参数是说话人的选择，模型一共有187个说话人。
 # Introduction
-
-This repository supports running the following functions **locally**
-
-  - Speech-to-text (i.e., ASR)
-  - Text-to-speech (i.e., TTS)
-  - Speaker identification
-
-on the following platforms and operating systems:
-
-  - Linux, macOS, Windows
-  - Android
-  - iOS
-  - Raspberry Pi
-  - etc
-
-# Useful links
-
-- Documentation: https://k2-fsa.github.io/sherpa/onnx/
-- APK for the text-to-speech engine: https://k2-fsa.github.io/sherpa/onnx/tts/apk-engine.html
-- APK for speaker identification: https://k2-fsa.github.io/sherpa/onnx/speaker-identification/apk.html
-
-# How to reach us
+# How to reach me
+- my email:liujj15972756175@163.com
 
 Please see
 https://k2-fsa.github.io/sherpa/social-groups.html
