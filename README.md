@@ -1,8 +1,8 @@
 # TTS语音转文字 Demo （using vits）
 - 话不多说先展示个效果吧
-[1-1.wav](/Test-wav/1-1.wav) [1-2.wav](/Test-wav/1-2.wav) demo1文本：峰会开始喽，现场好多人啊！
-[2-1.wav](/Test-wav/2-1.wav) [2-2.wav](/Test-wav/2-2.wav) demo2文本：大家好，我是算能科技的小音。
-[3-1.wav](/Test-wav/3-1.wav) [3-2.wav](/Test-wav/3-2.wav) demo3文本：各位大佬们今天齐聚杭州峰会。
+- [1-1.wav](/Test-wav/1-1.wav) [1-2.wav](/Test-wav/1-2.wav) demo1文本：峰会开始喽，现场好多人啊！
+- [2-1.wav](/Test-wav/2-1.wav) [2-2.wav](/Test-wav/2-2.wav) demo2文本：大家好，我是算能科技的小音。
+- [3-1.wav](/Test-wav/3-1.wav) [3-2.wav](/Test-wav/3-2.wav) demo3文本：各位大佬们今天齐聚杭州峰会。
 
 ## 1. 获取代码
 执行`git clone https://github.com/liujjdata/TTS-TPU-vits.git`。
