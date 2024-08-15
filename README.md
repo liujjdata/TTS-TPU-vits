@@ -18,7 +18,7 @@
 * 若是在板子上实测，需要在x86机器上完成交叉编译，按以下步骤操作：
  1. 获取cvitek_tpu_sdk，然后执行`source cvitek_tpu_sdk/envs_tpu_sdk.sh`，这里的cvitek_tpu_sdk是可以在板子上运行cviruntime。
  2. 下载交叉编译工具 wget https://occ-oss-prod.oss-cn-hangzhou.aliyuncs.com/resource//1705395627867/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1-20240115.tar.gz 。
- 3. 设置环境变量 export PATH=/workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin:$PATH。[获取riscv-gnu-toolchain并设置环境变量](https://k2-fsa.github.io/sherpa/onnx/install/riscv64-embedded-linux.html#install-toolchain)，注意这里帖子是2.6.1版本。
+ 3. 设置环境变量 `export PATH=/workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin:$PATH`。[获取riscv-gnu-toolchain并设置环境变量](https://k2-fsa.github.io/sherpa/onnx/install/riscv64-embedded-linux.html#install-toolchain)，注意这里帖子是2.6.1版本。
  4. 设置TPU SDK路径，`export TPU_SDK_PATH=/workspace/cvitek_tpu_sdk`。
 
 ## 3.1 在x86机器模拟运行，编译在docker的sample
