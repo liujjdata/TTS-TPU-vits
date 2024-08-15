@@ -3792,3 +3792,19 @@ gmake[1]: Leaving directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-l
 Source file was:
 int main() { return 0; }
 
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 succeeded with the following output:
+Change Dir: /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-6KsG6W
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_743fb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_743fb.dir/build.make CMakeFiles/cmTC_743fb.dir/build
+gmake[1]: Entering directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-6KsG6W'
+Building CXX object CMakeFiles/cmTC_743fb.dir/src.cxx.o
+/workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin/riscv64-unknown-linux-gnu-g++ -DCOMPILER_SUPPORT_std=cpp03  -march=rv64gc    -std=c++03 -o CMakeFiles/cmTC_743fb.dir/src.cxx.o -c /workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-6KsG6W/src.cxx
+Linking CXX executable cmTC_743fb
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_743fb.dir/link.txt --verbose=1
+/workspace/TTS_workspace/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.8.1/bin/riscv64-unknown-linux-gnu-g++ -march=rv64gc  CMakeFiles/cmTC_743fb.dir/src.cxx.o -o cmTC_743fb 
+gmake[1]: Leaving directory '/workspace/TTS_workspace/tts-deploy/build-riscv64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-6KsG6W'
+
+
+Source file was:
+int main() { return 0; }
+

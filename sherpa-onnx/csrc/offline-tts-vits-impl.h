@@ -380,14 +380,10 @@ class OfflineTtsVitsImpl : public OfflineTtsImpl {
     for (auto i : audio_shape) {
       total *= i;
     }
-    SHERPA_ONNX_LOGE("1");  
     const float *p = audio.GetTensorData<float>();
-    SHERPA_ONNX_LOGE("2");  
     GeneratedAudio ans;
     ans.sample_rate = model_->GetMetaData().sample_rate;
-    SHERPA_ONNX_LOGE("3");  
     ans.samples = std::vector<float>(p, p + total/2);
-    SHERPA_ONNX_LOGE("4"); 
     return ans;
   }
 

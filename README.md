@@ -1,5 +1,5 @@
-# TTS语音转文字 Demo （using vits）
-- 端侧芯片上的第一个可用的语音模型！！！
+# TTS文字转语音 Demo （using vits）
+- 端侧芯片上的第一个可用的语音生成模型！！！
 - 话不多说先展示个效果吧(支持多说话人)
 - [1-1.wav](/Test-wav/1-1.wav) [1-2.wav](/Test-wav/1-2.wav) demo1文本：峰会开始喽，现场好多人啊！
 - [2-1.wav](/Test-wav/2-1.wav) [2-2.wav](/Test-wav/2-2.wav) demo2文本：大家好，我是算能科技的小音。
