@@ -6,7 +6,7 @@
 
 ## 1. 获取代码
 执行`git clone https://github.com/liujjdata/TTS-TPU-vits.git`。
-
+- TTS部署的主体代码在sherpa-onnx/csrc文件下
 ## 2. 环境准备
 - 获取docker镜像，创建容器并进入：`docker run --privileged --name mytpudev -v $PWD:/workspace -it sophgo/tpuc_dev:latest`。执行完这一命令后，会进入docker，后续步骤都在`mytpudev`容器中执行。
 
